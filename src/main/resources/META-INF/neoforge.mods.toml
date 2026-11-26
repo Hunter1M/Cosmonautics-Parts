@@ -1,0 +1,58 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="GNU GPL v3"
+logoFile="icon.png"
+
+[[mixins]]
+config="rocketnautics.mixins.json"
+
+[[mods]]
+modId="rocketnautics"
+version="${file.jarVersion}"
+displayName="Cosmonautics Parts"
+authors="Element1M"
+credits="Original Create: Cosmonautics by webyep-art, M_W_K, and contributors"
+description='''
+Standalone aerospace parts addon for Create Aeronautics and Sable — rocket thrusters, RCS, gyrodynes, modular engines, stage separators, solar power, jetpacks, and flight instrumentation.
+'''
+
+[[dependencies.rocketnautics]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.rocketnautics]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.rocketnautics]]
+modId="create"
+type="required"
+versionRange="[1.21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.rocketnautics]]
+modId="aeronautics"
+type="required"
+versionRange="[1.0.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.rocketnautics]]
+modId="sable"
+type="required"
+versionRange="[2.0.3,)"
+ordering="NONE"
+side="BOTH"
+
+[mc-publish]
+dependencies=[
+  "aeronautics(required){modrinth:create-aeronautics}{curseforge:create-aeronautics}",
+  "sable(required){modrinth:sable}{curseforge:sable}"
+]

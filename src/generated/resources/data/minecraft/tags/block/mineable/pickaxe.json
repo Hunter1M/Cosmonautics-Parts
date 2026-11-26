@@ -1,0 +1,31 @@
+{
+  "values": [
+    "rocketnautics:titanium_casing",
+    "rocketnautics:rocket_thruster",
+    "rocketnautics:creative_thruster",
+    "rocketnautics:vector_thruster",
+    "rocketnautics:booster_thruster",
+    "rocketnautics:rcs_thruster",
+    "rocketnautics:brass_encased_rcs_thruster",
+    "rocketnautics:copper_encased_rcs_thruster",
+    "rocketnautics:railway_encased_rcs_thruster",
+    "rocketnautics:thruster_mount",
+    "rocketnautics:engine_pipes",
+    "rocketnautics:engine_nozzle",
+    "rocketnautics:hose_anchor",
+    "rocketnautics:solar_panel",
+    "rocketnautics:ion_engine",
+    "rocketnautics:copper_wire",
+    "rocketnautics:energy_tank",
+    "rocketnautics:separator",
+    "rocketnautics:separator_charge",
+    "rocketnautics:separator_shaft",
+    "rocketnautics:sputnik",
+    "rocketnautics:gyrodyne",
+    "rocketnautics:titanium_ore",
+    "rocketnautics:deepslate_titanium_ore",
+    "rocketnautics:raw_titanium_block",
+    "rocketnautics:titanium_block",
+    "rocketnautics:titanium_alloy_block"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "rocket_thrust": {
+    "category": "block",
+    "subtitle": "subtitles.rocketnautics.rocket_thrust",
+    "sounds": [
+      {
+        "name": "rocketnautics:rocket_thrust",
+        "stream": true
+      }
+    ]
+  },
+  "music.brittle_rille": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "rocketnautics:music/brittle_rille",
+        "stream": true
+      }
+    ]
+  },
+  "music.arcadia": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "rocketnautics:music/arcadia",
+        "stream": true
+      }
+    ]
+  },
+  "music.pale_dot_in_the_sky": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "rocketnautics:music/pale_dot_in_the_sky",
+        "stream": true
+      }
+    ]
+  },
+  "music.reflecting_satellites": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "rocketnautics:music/reflecting_satellites",
+        "stream": true
+      }
+    ]
+  },
+  "music.solar_sails": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "rocketnautics:music/solar_sails",
+        "stream": true
+      }
+    ]
+  },
+  "sonic_boom": {
+    "category": "neutral",
+    "subtitle": "subtitles.rocketnautics.sonic_boom",
+    "sounds": [
+      {
+        "name": "rocketnautics:sonic_boom",
+        "stream": false
+      }
+    ]
+  },
+  "high_wind": {
+    "category": "player",
+    "subtitle": "subtitles.rocketnautics.high_wind",
+    "sounds": [
+      {
+        "name": "rocketnautics:high_wind",
+        "stream": true
+      }
+    ]
+  },
+  "tank_explosion": {
+    "category": "block",
+    "subtitle": "subtitles.rocketnautics.tank_explosion",
+    "sounds": [
+      "rocketnautics:shell_explosion",
+      "rocketnautics:shell_explosion1",
+      "rocketnautics:shell_explosion2"
+    ]
+  }
+}

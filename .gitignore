@@ -1,0 +1,61 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Minecraft / NeoForge
+run/
+*.log
+local.properties
+/buildSrc/build/
+/buildSrc/.gradle/
+
+# Python
+__pycache__/
+*.pyc
+
+# Project specific
+tempfolderfortempfiles/
+.gigaide/
+seperatordump.json
+scratch/
+/bin/
+
+# Temp / Misc
+*.tmp
+*.bak
+*.swp
+*.patch
+*.diff
+
+# Keep config but ignore credentials
+# discord_config.py
+compile_output.txt
+.editorconfig
+.idea
+.vscode
+.eclipse
+.editorconfig
+**/.cache
+veil_src
+
+# Local mods
+/localmods/*
+!/localmods/.gitkeep

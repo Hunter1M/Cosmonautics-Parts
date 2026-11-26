@@ -1,0 +1,11 @@
+{
+  "values": [
+    "rocketnautics:titanium_casing",
+    "rocketnautics:rcs_thruster",
+    "rocketnautics:brass_encased_rcs_thruster",
+    "rocketnautics:copper_encased_rcs_thruster",
+    "rocketnautics:railway_encased_rcs_thruster",
+    "rocketnautics:ion_engine",
+    "rocketnautics:separator_shaft"
+  ]
+}

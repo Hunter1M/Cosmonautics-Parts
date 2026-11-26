@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        maven {
+            url 'https://maven.neoforged.net/releases'
+        }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'rocketnautics'
+
+dependencyResolutionManagement {
+    repositories {
+        maven {
+            url uri('local_maven')
+        }
+        mavenCentral()
+        maven {
+            url 'https://maven.neoforged.net/releases'
+        }
+    }
+}
+

@@ -1,0 +1,49 @@
+package dev.devce.rocketnautics.content.blocks;
+
+import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.ScrollValueBehaviour;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.Level;
+
+import dev.devce.rocketnautics.api.peripherals.IPeripheral;
+
+public interface IThruster extends IPeripheral {
+    boolean isActive();
+    boolean isRemoved();
+    BlockPos getBlockPos();
+    Level getLevel();
+    ScrollValueBehaviour getThrustPower();
+    void setActive(boolean active);
+    void setThrottle(float throttle);
+    void setGimbal(double pitch, double yaw);
+    float getFlow();
+
+    default double readValue(String key) {
+        if ("active".equals(key) || "ignition".equals(key)) return isActive() ? 1.0 : 0.0;
+        if ("thrust".equals(key)) return getFlow() * 100.0;
+        if ("throttle".equals(key)) return getFlow();
+        return 0;
+    }
+
+    default void writeValue(String key, double value) {
+        if ("ignition".equals(key) || "active".equals(key)) {
+            setActive(value > 0.5);
+        } else if ("throttle".equals(key)) {
+            setThrottle((float) value);
+        } else if ("thrust".equals(key)) {
+            setActive(value > 0);
+            var behavior = getThrustPower();
+            if (behavior != null) {
+                float maxN = behavior.getValue() * 50.0f;
+                setThrottle(maxN > 0 ? (float)(value / maxN) : 0);
+            } else {
+                setThrottle((float) value);
+            }
+        }
+    }
+
+    default void writeValues(String key, double... values) {
+        if (key.equals("gimbal") && values.length >= 2) {
+            setGimbal(values[0], values[1]);
+        }
+    }
+}
